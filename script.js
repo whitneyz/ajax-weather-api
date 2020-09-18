@@ -9,17 +9,48 @@ function getWeather(name) {
 async function whitney(json) {
 
     let i = 0;
-    let timeNow =
-    for (i=0; i < 8; i++){
-        console.log(json.list[i].main.temp);
+    var t = new Date();
+    var h = d.getHours();
+    if (h >=0 && h<3) {
+    for (i=0; i < 8; i++) {
+        console.log(json.list[i].main.temp); // ipv console log moet het in de browser zie hieronder
+        // document.getElementById("temp1")
+    }
+
+    } else if (h>=3 && h<6) {
+        for (i=0; i < 7; i++) {
+            console.log(json.list[i].main.temp); // ipv console log moet het in de browser zie hieronder
+            // document.getElementById("temp1")
+        }
+    } else if (h>=6 && h<9) {
+        for (i = 0; i < 6; i++) ;
+        console.log(json.list[i].main.temp); // ipv console log moet het in de browser zie hieronder
+        // document.getElementById("temp1")
+    } else if (h>=9 && h<12) {
+        for (i = 0; i < 5; i++) ;
+        console.log(json.list[i].main.temp); // ipv console log moet het in de browser zie hieronder
+        // document.getElementById("temp1")
+    } else if (h>=12 && h<15) {
+        for (i = 0; i < 4; i++) ;
+        console.log(json.list[i].main.temp); // ipv console log moet het in de browser zie hieronder
+        // document.getElementById("temp1")
+    } else if (h>=15 && h<18) {
+        for (i = 0; i < 3; i++) ;
+        console.log(json.list[i].main.temp); // ipv console log moet het in de browser zie hieronder
+        // document.getElementById("temp1")
+    } else if (h>=18 && h<21) {
+        for (i = 0; i < 2; i++) ;
+        console.log(json.list[i].main.temp); // ipv console log moet het in de browser zie hieronder
+        // document.getElementById("temp1")
+    } else {
+        for (i = 0; i < 1; i++) ;
+        console.log(json.list[i].main.temp); // ipv console log moet het in de browser zie hieronder
+        // document.getElementById("temp1")
     }
     //let temp = await whitney();
    // let array = temp(json) aan Bert vragen of kan ik min & max temp gebruiken
-    //let city =
 
    // let displayHtml = document.getElementById("temp1").value;
-    //whitney(displayHtml);
-
 }
 
 document.getElementById("press").addEventListener("click", function  () {
